@@ -42,11 +42,11 @@ function man2({ navigation }) {
       </View>
       <View style={{flexDirection: 'row', justifyContent: 'space-between', margin: '10px'}}>
         <TouchableOpacity onPress={()=>{navigation.navigate('Screen1')}}>
-            <Text>{'<-'}</Text>
+            <Image source={(require('../assets/img/icons8-arrow-50.png'))} style={{height:30, width:30}}></Image>
         </TouchableOpacity>
         <View style={{flexDirection: 'row'}}>
             <Image
-                source={require('../assets/imgManageYourTask/Image.png')}
+                source={require('../assets/imgManageYourTask/Rectangle.png')}
                 style={{height: '35px', width: '35px', resizeMode: 'contain'}}
             />
             <View style={{flexDirection: 'column'}}>
@@ -57,10 +57,10 @@ function man2({ navigation }) {
       </View>
 
       <View style={{flexDirection: 'row', borderWidth: '1px', borderRadius: '3px', borderColor: 'gray',height: '40px', width: '300px', alignItems: 'center', top: '40px', left: '30px'}}>
-        <Image
+        {/* <Image
             source={require('../assets/img/Vector.png')}
             style={{height:'20px', width:'20px', resizeMode:'contain', left: '5px'}}
-        />
+        /> */}
         <TextInput placeholder="   Search" style={{height: '40px', width: '300px'}}>
         </TextInput>
       </View>
@@ -69,7 +69,7 @@ function man2({ navigation }) {
             data={data}
             renderItem={({item})=>{
                 return(
-                    <View style={{height: '50px', width:'300px', borderRadius:'40px', backgroundColor: 'gray', justifyContent: 'center', alignItems: 'center', left: '30px', marginBottom: '10px'}}>
+                    <View style={{height: '50px', width:'300px', borderRadius:'40px', backgroundColor: 'yellow', justifyContent: 'center', alignItems: 'center', left: '30px', marginBottom: '10px'}}>
                         <View style={{flexDirection: 'row', justifyContent: 'space-evenly'}}>
                             <TouchableOpacity style={{width:'50px'}}>
                                 <Image
@@ -78,12 +78,6 @@ function man2({ navigation }) {
                                 />  
                             </TouchableOpacity>
                             <Text style={{width:'200px'}}>{item.taskName}</Text>
-                            <View style={{width:'50px'}}>
-                                <Image
-                                    source={require('../assets/img/Vector.png')}
-                                    style={{height:'20px', width:'20px', resizeMode:'contain', left: '5px'}}
-                                />
-                            </View>
                         </View>
                     </View>
                 )

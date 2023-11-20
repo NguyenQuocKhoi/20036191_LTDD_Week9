@@ -22,7 +22,7 @@ function man3({ navigation }) {
       <View style={{flexDirection: 'row', justifyContent: 'space-between', margin: '10px'}}>
         <View style={{flexDirection: 'row'}}>
             <Image
-                source={require('../assets/imgManageYourTask/Image.png')}
+                source={require('../assets/imgManageYourTask/Rectangle.png')}
                 style={{height: '35px', width: '35px', resizeMode: 'contain'}}
             />
             <View style={{flexDirection: 'column'}}>
@@ -30,9 +30,9 @@ function man3({ navigation }) {
                 <Text>Have agrate day ahead</Text>
             </View>
         </View>
-        <TouchableOpacity onPress={()=>{navigation.navigate('Screen2')}}>
-                <Text>{'<-'}</Text>
-            </TouchableOpacity>
+        {/* <TouchableOpacity onPress={()=>{navigation.navigate('Screen2')}}>
+                
+            </TouchableOpacity> */}
       </View>
 
       <View style={{alignItems: 'center'}}>
@@ -51,7 +51,7 @@ function man3({ navigation }) {
       <View style={{top:'150px'}}>
         <View style={{flex: 1, alignItems: 'center'}}>
             <TouchableOpacity
-                onPress={()=>{navigation.navigate('man2')}} 
+                onPress={()=>{navigation.navigate('Screen2')}} 
                 style={{height: '40px', width: '180px', backgroundColor: 'rgba(0, 189, 214, 1)', borderRadius: '10px', justifyContent: 'center'}}>
                 <Text style={{textAlign: 'center', fontSize: '18px', color:'white'}}>Finish{'->'}</Text>
             </TouchableOpacity>
